@@ -3,7 +3,7 @@ let currentResult = defaultResult;
 let logEntries = [];
 function getUserInput()
 {
-    return parseInt(userInput.value);
+    return parseInt(userInput.value);  
 }
 function createAndWriteOutput(operator, resultBefore, resultAfter)
 {
@@ -28,7 +28,7 @@ function add(){
     const initialResult = currentResult;
    currentResult = currentResult + enteredNumber;
     //alert(`the result is ${result}`);
-   createAndWriteOutput('+', currentResult, enteredNumber);
+   createAndWriteOutput('+', initialResult, enteredNumber);
     //currentResult = currentResult + +userInput.value
     WriteToLog("ADD", initialResult, enteredNumber, currentResult);
    
